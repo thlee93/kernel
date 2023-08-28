@@ -2,6 +2,7 @@
 pragma solidity ^0.8.0;
 
 uint256 constant SIG_VALIDATION_FAILED = 1;
+uint256 constant SIG_MERKLE_PROOF_FAILED = 2;
 
 function _intersectValidationData(uint256 a, uint256 b) pure returns (uint256 validationData) {
     if (uint160(a) != uint160(b)) {
